@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Reshu Portfolio</title>
+</head>
+<body>
+    <div class="navigation-bar">
+        <!--nav div start here-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+        <a class="navbar-brand" href="#"><span class="logo" >RESHU</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home"><span class="mymenu" >Home</span> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"><span class="mymenu" >About</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills"><span class="mymenu" >Skills</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#project"><span class="mymenu" >Project</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact"><span class="mymenu" >Contact</span></a>
+              </li>
+           
+            </ul>
+        </div>
+      </nav>
+      <!--nav div ends here-->
+    </div>
+    <div class="allsections"> 
+        <div class="section home-section" id="home">
+            <div class="myinfo">
+                <span class="info-home">Hello</span><br>
+                <span class="info-home">My Name is</span>
+                <div class="logo myname " data-aos="slide-right">Reshu Verma</div>
+                <div class="info-home">I am a</div>
+                <span class="fsjd">Full Stack Java Developer</span><br>
+
+                <button type="button" class="rsm"> RESUME</button>
+            </div>   
+        </div>
+        <div class="section about-section" id="about">
+            <div class="myimg aboutsect " >
+                <img src="Reshu pic.png" width="350px " height="350px" style="border-radius: 50%; box-shadow: 0px 0px 15px #ddcbff ;">
+                
+
+            </div>
+            <div class="cobj aboutsect">
+                <h1 align="center" class="abt" >ABOUT </h1>
+                <p class="carrer" >Aiming to work with your company as a Full Stack Developer where in I can apply my problem solving skills along with technical knowledge for successful project completion.</p> 
+            </div>
+        </div>
+        <!--about section ends here-->
+        <div class="section skills-section" id="skills" align="center">
+            <h1 class="skl">SKILLS </h1>
+            <table class="tbl" width="90%" height="360px" border="2px" >
+                <tr class="rows">
+                    <td align="center" valign="top" width="50%" height="180px">
+                        <div >
+                            <h3 class="skill-head">Languages</h3>
+                            <p class="skillset">
+                                Core Java, JavaScript, HTML, CSS, XML, SQL, JSON, C#
+                            </p>
+                        </div>
+                    </td>
+                    <td align="center" valign="top" >
+                        <div >
+                            <h3 class="skill-head">Api's and Framework</h3>
+                            <p class="skillset">
+                                Collection, Stream, Restful API, JDBC, JSP, Severlets, Hibernates, Bootstrap, React Js, Spring
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="rows">
+                    <td align="center" valign="top" width="50%" height="200px">
+                        <div >
+                            <h3 class="skill-head">Tools and Servers</h3>
+                            <p class="skillset">
+                                Eclipse, VS Code, Sublime, JIRA, Postman, Github,  MYSQL, Oracle
+                            </p>
+                        </div>
+                    </td>
+                    <td align="center" valign="top" >
+                        <div >
+                            <h3 class="skill-head">Operating System</h3>
+                            <p class="skillset">
+                                Windows, Ubuntu, iOS, Andriod, Linux
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--skills section ends here-->
+        <!-- <div class="section project-section" id="project">
+            <h1 class="skl cnt">PROJECTS</h1>
+            <div class="all-projects" align="center">
+                <div class="card-deck">
+                    <div class="card" data-aos="slide-right">
+                     <center>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThl562GWsYPyejlgXEPM_ZW5dU5PnUcQEBpg&usqp=CAU" class="card-img-top" alt="calculator">
+                     </center>
+                      <div class="card-body">
+                        <h5 class="card-title">CALCULATOR</h5>
+                        <p class="card-text">Developed a user-friendly calculator website using HTML and CSS, featuring a simple interface for easy input and calculation. Designed with accessibility in mind, allowing users to perform basic arithmetic operations effortlessly. Created as a practical tool for everyday calculations, showcasing skills in building functional web applications. </p>
+                        
+                      </div>
+                    </div>
+                    <div class="card" data-aos="slide-down">
+                     <center> <img src="weather.jpeg" class="card-img-top" alt="Weather App" height="100px" width="100px"></center>
+                      <div class="card-body">
+                        <h5 class="card-title">WEATHER APP</h5>
+                        <p class="card-text">Created an elegant weather application with HTML and CSS, boasting a user-friendly interface for effortless weather monitoring. Emphasized minimalist design and accessibility, guaranteeing smooth navigation and inclusivity across user demographics</p>
+                        
+                      </div>
+                    </div>
+                    <div class="card" data-aos="slide-left">
+                     <center>
+                        <img src="https://cdn-icons-png.flaticon.com/256/10743/10743163.png" class="card-img-top" alt="employee management">
+                     </center>
+                      <div class="card-body">
+                        <h5 class="card-title">EMPLOYEE MANAGEMENT</h5>
+                        <p class="card-text">Developed as a reliable tool for managing employee information, showcasing expertise in building functional web applications. With its intuitive features and user-focused design, the system streamlines employee management tasks for enhanced productivity</p>
+                       
+                    </div>
+                  </div>
+                  
+            </div>
+        </div> 
+         project section ends here 
+  </div> -->
+        <div class="section contact-section" id="contact">
+            <h1 class="skl cnt">CONTACT</h1>
+            <table class="cnt-tbl" height="500px" width="100%">
+                <tr align="center" valign="top" class="tbl-row">
+                    <td width="50%" class="cnt-info">
+                        <div class="minfo" >MY INFO</div>
+          
+                        <div>
+                          <p class="details">Name: Reshu Verma</p>
+                          <p class="details">Contact no: 9801821420</p>
+                          <p class="details">Email: reshu0899@gmail.com</p>
+                          <p class="details">Address: Gokhale Nagar, Pune, Maharashtra</p>
+                          <p class="details">Qualification: Bachelor of Engineering in Information Technology</p>
+                          <p class="details">Passout Year: 2023</p>
+                          <p class="details">CGPA: 9.18</p>
+
+                          <p><a href="https://www.linkedin.com/in/reshu-verma-05302b1aa/"><u class="details">LinkedIn</u></a></p>
+                          
+                        </div>
+                    </td>
+                    <td class="cnt-tbl1">
+                        
+                        <div class="contact-form">
+                          <h4 class="minfo">ENQIRY</h4>
+                          <form>
+                            <div class="form-group">
+                              <label for="inputEmail">Email</label>
+                              <input type="email" class="form-control" id="inputEmail" placeholder="@gmail.com">
+                            </div>
+                            <div class="form-group">
+                              <label for="inputAddress">Address</label>
+                              <input type="text" class="form-control" id="inputAddress" placeholder="Address  ">
+                            </div>
+                            <div class="form-group">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                  Check me out
+                                </label>
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">ENQIRY</button>
+                          </form>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        
+         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+         <script>
+           AOS.init({
+            duration:2000,
+           });
+         </script>
+
+    
+</body>
+</html>

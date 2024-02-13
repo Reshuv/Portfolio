@@ -1,0 +1,275 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 20px;
+
+    
+}
+.navigation-bar{
+    background: transparent;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    
+    backdrop-filter: blur(30px);
+    z-index: 5;
+    box-shadow: 0px 0px 10px gray;
+}
+.mymenu{
+    font-weight: bolder;
+    color: darkcyan;
+}
+.mymenu:hover{
+    text-decoration: underline 2px solid rgb(0, 75, 75);
+}
+.logo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #8a2be2;
+}
+
+.allsections{
+    position: relative;
+    top: 80px;
+    width: 100% !important;
+}
+.section{
+   
+    height: 100vh;
+    border: 5px solid black;
+}
+.section h1{
+    text-align: center;
+   
+}
+html{
+    scroll-behavior: smooth;
+}
+.home-section{
+    border: none;
+    width: 100%;
+    background-size: 40%;
+    background-image: url(https://user-images.githubusercontent.com/74038190/221352975-94759904-aa4c-4032-a8ab-b546efb9c478.gif);
+    background-repeat: no-repeat;
+    height: 550px;
+    
+    background-position:  right 95px;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    background-color: beige;
+
+}
+.myinfo{
+    height: 450px;
+    width: 50%;
+    margin-left: 95px;
+    margin-right: 40px
+}
+.info-home{
+    font-size: 30px;
+    font-family: cursive;
+    background-position: left;
+    padding-bottom: 20px;
+    margin: 5px 5px;  
+}
+
+.myname{
+    font-size: 50px;
+    color: #8a2be2;
+}
+.fsjd{
+    font-family:cursive ;
+    font-size: 30px;
+    color:darkcyan ;
+    line-height: 1%;
+}
+.rsm{
+    height: 50px;
+    width: 120px;
+    margin: 10px 0px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-family: Arial Black;
+}
+.rsm:hover{
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    transform: scale(0.9);
+}
+.about-section{
+    background-color: whitesmoke;
+    border: none;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    padding: 80px;
+    background-color: blanchedalmond;
+    
+ }
+ .aboutsect{
+    height: 500px;
+   width:50%
+    
+ }
+ .myimg{
+    width: 50%;
+    margin: 0px 0px;  
+    padding-top: 80px;
+    
+ }
+ .cobj{
+    border: 1px solid black;
+    padding: 20px;
+    height: 460px;
+    margin: 10px;
+    border-radius: 30px;
+    
+ }
+ 
+ .abt{
+    font-family: cursive;
+    font-size: 30px;
+    color: #4a1e9e;
+    margin-top: 40px;
+    padding-top: 10px;
+
+ }
+ .carrer{
+    text-align: justify;
+    font-size: 27px;
+    margin-top: 30px;
+    text-indent: 20%;
+    font-family: sans-serif;
+    line-height: 40px;
+    padding-left: 10px;
+    
+   padding-top: 10px;
+   width: 90%;
+   height: 350px;
+ }
+
+ .skills-section{
+    height: 600px;
+    border: none;
+    padding-top:90px ;
+    background-color:beige;
+    /* width: 100%; */
+ }
+ .rows td div{
+    padding: 10px;
+ }
+ .skl{
+    color: #4a1e9e;
+
+ }
+ .tbl{
+    margin-top: 30px;
+
+ }
+ .skill-head{
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-family:sans-serif;
+    color: darkcyan;
+    font-variant: small-caps;
+    text-decoration: underline 3px solid ;
+    
+ }
+ .skillset{
+    font-weight: bolder;
+    font-family: sans-serif;
+
+ }
+ .rows td div{
+    border-radius: 20px;
+    height: 200px;
+ }
+ .rows td div:hover{
+    box-shadow: 0px 0px 20px grey;
+ }
+ /* .project-section{
+    padding: 20px;
+    border: none;
+    width: 1200px; 
+
+ }
+ .all-projects{
+    margin-top: 40px;
+ }
+ .card-title{
+    color:darkcyan;
+    font-weight: bolder;
+}
+.card-img-top{
+    height: 150px;
+    width: 150px;
+}
+.card{
+    height: 500px;
+    border-radius: 30px;
+}
+.project-section{
+    height: 700px;
+    
+}
+.card-text{
+    font-size: 17px;
+    font-family: sans-serif;
+} */
+
+.contact-section{
+    border: none;
+    background-color: whitesmoke;
+    padding-top: 150px;
+    margin-top: 0px;
+    padding: 20px;
+    height: 700px;
+    
+}
+.cnt-tbl{
+    margin-top: 30px;
+}
+
+
+.cnt{
+    padding-top: 80px;
+}
+.form-control{
+    width:90%;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+
+.minfo{
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: darkcyan;
+    
+}
+.details{
+    font-family: cursive;
+}
+.btn{
+    height: 50px;
+    width: 120px;
+    margin: 10px 0px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-family: Arial Black;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    transform: scale(0.9);
+}
