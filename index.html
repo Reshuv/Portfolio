@@ -1,208 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" type="x-icon" href="images/code-solid.svg">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Reshu Portfolio</title>
+    <title> Reshu Verma</title>
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-    <div class="navigation-bar">
-        <!--nav div start here-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        
-        <a class="navbar-brand" href="#"><span class="logo" >RESHU</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#home"><span class="mymenu" >Home</span> <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about"><span class="mymenu" >About</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#skills"><span class="mymenu" >Skills</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#project"><span class="mymenu" >Project</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact"><span class="mymenu" >Contact</span></a>
-              </li>
-           
-            </ul>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+              <h1><span class="logo" >RESHU</span></h1>
+                <ul id="menus">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Java Developer</p>
+                <h1 data-aos="slide-right">Reshu Verma</h1>
+                <h2>I love learning about new things 🚀 I enjoy fashion, <br/>
+                business, technology and travel 🌐<br/></h2>
+                 
+            </div>
         </div>
-      </nav>
-      <!--nav div ends here-->
     </div>
-    <div class="allsections"> 
-        <div class="section home-section" id="home">
-            <div class="myinfo">
-                <span class="info-home">Hello</span><br>
-                <span class="info-home">My Name is</span>
-                <div class="logo myname " data-aos="slide-right">Reshu Verma</div>
-                <div class="info-home">I am a</div>
-                <span class="fsjd">Full Stack Java Developer</span><br>
 
-                <button type="button" class="rsm"> RESUME</button>
-            </div>   
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="abt-col-1">
+                    <img src="Reshu pic.png">
+                </div>
+                <div class="abt-col-2">
+                    <h1 class="sub-header">Who I am</h1>
+                    <p>I began my journey in software engineering during my sophomore year of college. It was not until <br>
+                        the summer of second year I got the opportunity to intern as a graphics designer where I realized <br> 
+                        how powerful the skill of software engineering truly is. From there, I never looked back.    
+                    </p>
+
+                    <div class="tabs">
+                        <p class="tab-links act-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-conts act-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br/>English</li>
+                            <li><span>Front-End</span><br/>HTML, CSS, Javascript</li>
+                            <li><span>Back-End</span><br/>JAVA</li>
+                            <li><span>Database</span><br/>MySQL, SQL Server</li>
+                            <li><span>Tools</span><br/>Git, Github, Postman, Vscode </li>
+                            <li><span>Operating Systems</span><br>Windows, Linux</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-conts" id="experience">
+                        <ul>
+                            <!-- <li><span>Sep 2023 - Present</span><br>Freelance Web Developer</li>
+                            <li><span>Sep 2023 - Present</span><br>Junior Software Engineer | CyberZek</li> -->
+                            <!-- <li><span>July 2023 - Sep 2023</span><br>Software Engineer Intern | CyberZek</li>
+                            <li><span>May 2022 - Aug 2022</span><br/>Software Developer Intern | Samaritan's Purse</li> -->
+                            <li><span>May 2021 - Aug 2021</span><br/>Graphics Designer Intern | Geniobits Pvt. Ltd.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-conts" id="education">
+                        <ul>
+                            <li><span>May 2023</span><br/>BE in Information Technology |  SPPU</li>
+                            <li><span>June 2019</span><br/>HSC | Mk College Panki</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="resume">
+                    <a href="Reshu_Verma_Resume .pdf" download class="btn btncv">Download Resume</a>
+                </div>
+            </div>
         </div>
-        <div class="section about-section" id="about">
-            <div class="myimg aboutsect " >
-                <img src="Reshu pic.png" width="350px " height="350px" style="border-radius: 50%; box-shadow: 0px 0px 15px #ddcbff ;">
-                
+    </div>
+
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-header">Services</h1>
+
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I am experienced developing web applications using Javascript, MongoDB, Express, Node, and React.</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-pen"></i>
+                    <h2>Web Design</h2>
+                    <p>I love designing software products using Figma, Mural, and Canva. This differenciates the products in the market.</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-mobile"></i>
+                    <h2>Mobile Development</h2>
+                    <p>I am experienced developing mobile applications using React Native and Swift.</p>
+                </div>
 
             </div>
-            <div class="cobj aboutsect">
-                <h1 align="center" class="abt" >ABOUT </h1>
-                <p class="carrer" >Aiming to work with your company as a Full Stack Developer where in I can apply my problem solving skills along with technical knowledge for successful project completion.</p> 
+
+        </div>
+
+    </div> -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-header">Projects</h1>
+            
+            <div class="work-list">
+                <div class="work">
+                    <img src="youtube.png">
+                    <div class="layer">
+                       <h3>YouTube Clone</h3>
+                       <p>The YouTube clone which has same functionality of youtube.</p>
+                       <a href="https://reshuv.github.io/Youtube_clone/" target="_blank" rel="noreferrer noopener"> <i class="fa-solid fa-link"></i></a> 
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="calculator-icon-24.png">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>Calculator allows you to performs simple mathematical calculations.</p>
+                        <a href="https://reshuv.github.io/Calculator/" target="_blank" rel="noreferrer noopener"> <i class="fa-solid fa-link"></i></a> 
+                     </div>
+                </div>
+
+                <div class="work">
+                    <img src="weather.jpeg">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>The Weather App that fetach tells weather pf the city.</p>
+                        <a href="https://reshuv.github.io/WEATHER_APP/" target="_blank" rel="noreferrer noopener"> <i class="fa-solid fa-link"></i></a> 
+                     </div>
+                </div>
+            </div>
+            <a href="https://github.com/Reshuv/" target="_blank" rel="noreferrer noopener" class="btn">See more</a>
+        </div>
+
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-l">
+                    <h1 class="sub-header">Let's Connect</h1>
+                    <p> <i class="fa-solid fa-envelope"></i> reshu0899@gmail.com</p>
+                    <div class="social">
+                        <!-- <a href="https://www.instagram.com/andres.choque23/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-instagram"></i></a> -->
+                        <a href="https://www.linkedin.com/in/reshu-verma-05302b1aa/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Reshuv/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-github"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="contact-r">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <textarea name="Message" id=""  rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btncv">Submit</button>
+                    </form>
+                    <span id="submit-msg"></span>
+                </div>
+
             </div>
         </div>
-        <!--about section ends here-->
-        <div class="section skills-section" id="skills" align="center">
-            <h1 class="skl">SKILLS </h1>
-            <table class="tbl" width="90%" height="360px" border="2px" >
-                <tr class="rows">
-                    <td align="center" valign="top" width="50%" height="180px">
-                        <div >
-                            <h3 class="skill-head">Languages</h3>
-                            <p class="skillset">
-                                Core Java, JavaScript, HTML, CSS, XML, SQL, JSON, C#
-                            </p>
-                        </div>
-                    </td>
-                    <td align="center" valign="top" >
-                        <div >
-                            <h3 class="skill-head">Api's and Framework</h3>
-                            <p class="skillset">
-                                Collection, Stream, Restful API, JDBC, JSP, Severlets, Hibernates, Bootstrap, React Js, Spring
-                            </p>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="rows">
-                    <td align="center" valign="top" width="50%" height="200px">
-                        <div >
-                            <h3 class="skill-head">Tools and Servers</h3>
-                            <p class="skillset">
-                                Eclipse, VS Code, Sublime, JIRA, Postman, Github,  MYSQL, Oracle
-                            </p>
-                        </div>
-                    </td>
-                    <td align="center" valign="top" >
-                        <div >
-                            <h3 class="skill-head">Operating System</h3>
-                            <p class="skillset">
-                                Windows, Ubuntu, iOS, Andriod, Linux
-                            </p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <!--skills section ends here-->
-        <!-- <div class="section project-section" id="project">
-            <h1 class="skl cnt">PROJECTS</h1>
-            <div class="all-projects" align="center">
-                <div class="card-deck">
-                    <div class="card" data-aos="slide-right">
-                     <center>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThl562GWsYPyejlgXEPM_ZW5dU5PnUcQEBpg&usqp=CAU" class="card-img-top" alt="calculator">
-                     </center>
-                      <div class="card-body">
-                        <h5 class="card-title">CALCULATOR</h5>
-                        <p class="card-text">Developed a user-friendly calculator website using HTML and CSS, featuring a simple interface for easy input and calculation. Designed with accessibility in mind, allowing users to perform basic arithmetic operations effortlessly. Created as a practical tool for everyday calculations, showcasing skills in building functional web applications. </p>
-                        
-                      </div>
-                    </div>
-                    <div class="card" data-aos="slide-down">
-                     <center> <img src="weather.jpeg" class="card-img-top" alt="Weather App" height="100px" width="100px"></center>
-                      <div class="card-body">
-                        <h5 class="card-title">WEATHER APP</h5>
-                        <p class="card-text">Created an elegant weather application with HTML and CSS, boasting a user-friendly interface for effortless weather monitoring. Emphasized minimalist design and accessibility, guaranteeing smooth navigation and inclusivity across user demographics</p>
-                        
-                      </div>
-                    </div>
-                    <div class="card" data-aos="slide-left">
-                     <center>
-                        <img src="https://cdn-icons-png.flaticon.com/256/10743/10743163.png" class="card-img-top" alt="employee management">
-                     </center>
-                      <div class="card-body">
-                        <h5 class="card-title">EMPLOYEE MANAGEMENT</h5>
-                        <p class="card-text">Developed as a reliable tool for managing employee information, showcasing expertise in building functional web applications. With its intuitive features and user-focused design, the system streamlines employee management tasks for enhanced productivity</p>
-                       
-                    </div>
-                  </div>
-                  
-            </div>
-        </div> 
-         project section ends here 
-  </div> -->
-        <div class="section contact-section" id="contact">
-            <h1 class="skl cnt">CONTACT</h1>
-            <table class="cnt-tbl" height="500px" width="100%">
-                <tr align="center" valign="top" class="tbl-row">
-                    <td width="50%" class="cnt-info">
-                        <div class="minfo" >MY INFO</div>
-          
-                        <div>
-                          <p class="details">Name: Reshu Verma</p>
-                          <p class="details">Contact no: 9801821420</p>
-                          <p class="details">Email: reshu0899@gmail.com</p>
-                          <p class="details">Address: Gokhale Nagar, Pune, Maharashtra</p>
-                          <p class="details">Qualification: Bachelor of Engineering in Information Technology</p>
-                          <p class="details">Passout Year: 2023</p>
-                          <p class="details">CGPA: 9.18</p>
 
-                          <p><a href="https://www.linkedin.com/in/reshu-verma-05302b1aa/"><u class="details">LinkedIn</u></a></p>
-                          
-                        </div>
-                    </td>
-                    <td class="cnt-tbl1">
-                        
-                        <div class="contact-form">
-                          <h4 class="minfo">ENQIRY</h4>
-                          <form>
-                            <div class="form-group">
-                              <label for="inputEmail">Email</label>
-                              <input type="email" class="form-control" id="inputEmail" placeholder="@gmail.com">
-                            </div>
-                            <div class="form-group">
-                              <label for="inputAddress">Address</label>
-                              <input type="text" class="form-control" id="inputAddress" placeholder="Address  ">
-                            </div>
-                            <div class="form-group">
-                              <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                <label class="form-check-label" for="gridCheck">
-                                  Check me out
-                                </label>
-                              </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary">ENQIRY</button>
-                          </form>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+        <div class="copyright">
+            <p>©️ 2024 Reshu Verma. All rights reserved.</p>
         </div>
 
-        
-         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-         <script>
-           AOS.init({
-            duration:2000,
-           });
-         </script>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+       duration:2000,
+      });
+    </script>
 
-    
 </body>
+
 </html>
